@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>LISA STORE</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="navbar-logo">
+          <img src="img/logolisa.png" alt="Logo Lisa Store">
+            <h1>Lisa<span class="tec">Store</span></h1>
+        </div>
+        <div class="hamburger-menu">
+            <i class="fas fa-bars"></i>
+        </div>
+        <ul class="nav-links"> <li><a href="index.html">HOME</a></li>
+            <li><a href="login.html">LOGIN</a></li>
+            <li><a href="menu.html">MENU</a></li>
+            <li><a href="qris.html">QRIS</a></li>
+            <li><a href="contactus.html">CONTACT US</a></li>
+        </ul>
+     </nav>
+
+
+      <!-- Main Start -->
+    <div class="qris">
+  <div class="qris-wrapper">
+    <h1>QRIS ALL PAYMENT</h1>
+    <img src="img/qrisgambar.png" alt="QRIS">
+    <h2>SCAN UNTUK MELAKUKAN PEMBAYARAN</h2>
+  </div>
+</div>
+     <!-- Main end -->
+ <script>
+        const hamburger = document.querySelector('.hamburger-menu');
+        const navLinks = document.querySelector('.nav-links');
+
+        hamburger.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+        });
+     </script>
+</body>
+</html>

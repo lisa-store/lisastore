@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>LISA STORE</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="navbar-logo">
+          <img src="img/logolisa.png" alt="Logo Lisa Store">
+            <h1>Lisa<span class="tec">Store</span></h1>
+        </div>
+        <div class="hamburger-menu">
+            <i class="fas fa-bars"></i>
+        </div>
+        <ul class="nav-links"> <li><a href="index.html">HOME</a></li>
+            <li><a href="login.html">LOGIN</a></li>
+            <li><a href="menu.html">MENU</a></li>
+            <li><a href="qris.html">QRIS</a></li>
+            <li><a href="contactus.html">CONTACT US</a></li>
+        </ul>
+     </nav>
+     
+<div class="page-content">   
+<div class="wraper">
+        <form action="">
+            <h1>LOGIN</h1>
+            <div class="input-box">
+                <input type="text" placeholder="username" required>
+            </div>
+            <div class="input-box">
+                <input type="password" placeholder="password" required>
+            </div>
+            <div class="lupa-pass">
+                <label><input type="checkbox">Ingatkan saya</label>
+                <a href="#">Lupa Password</a>
+            </div>
+            <button type="submit" class="tombol">Login</button>
+            <div class="link-daftar">
+                <p>Tidak punya akun ? <a href="#">Daftar</a></p>
+            </div>
+        </form>
+    </div>
+    </div> 
+    <script>
+        const hamburger = document.querySelector('.hamburger-menu');
+        const navLinks = document.querySelector('.nav-links');
+
+        hamburger.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+        });
+     </script>
+     </body>
+</html>
